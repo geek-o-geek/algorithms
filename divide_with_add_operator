@@ -1,0 +1,16 @@
+// considering only perfect division cases
+
+function divide(a, b) {
+	if((b > a) || a==0 || b==0) return 0;
+  if(a === b) return 1;
+
+	let c = 0, i=0
+  while(c<a) {
+    c += b;
+    i++;
+  }
+  
+  return i;
+}
+
+console.log(divide(200, 50))
